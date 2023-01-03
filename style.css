@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(194, 137, 234);
+    background-image: url("./assets/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#header {
+    font-family: "Arabic Typesetting", serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#text {
+    font-family: "Arabic Typesetting", serif;
+    font-size: 2.5rem;
+    opacity: inherit;
+
+}
+
+hr {
+    width: 80%;
+    margin-top: 40px;
+    height: 2rem;
+    border: dotted 4px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: darkred;
+}
+
+#input1 {
+    width: 20%;
+    margin: auto;
+}
+
+#input2 {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.all {
+    margin: auto;
+    text-align: center;
+}
+
+#map {
+    width: 500px;
+    margin: 100px;
+}
+
+h3 {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.alert {
+
+    width: 20%;
+    border-radius: 30%;
+
+}
+
+
+
+#links {
+    margin-right: auto;
+    color: yellowgreen;
+}
+
+
+#error {
+    color: red;
+}
+
+#data1 {
+    color: rgb(6, 32, 40);
+    background-color: rgb(219, 147, 40);
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px;
+    border-radius: 5%;
+
+}
+
+#data2 {
+    color: rgb(4, 19, 36);
+    background-color: rgb(219, 147, 40);
+    width: 20%;
+    margin: auto;
+    border-radius: 5%;
+
+}
+
+#data3 {
+    color: rgb(4, 19, 36);
+    background-color: rgb(219, 147, 40);
+    width: 20%;
+    margin: auto;
+    border-radius: 5%;
+
+}
+
+#btn1 {
+    background-color: rgb(12, 7, 56);
+    color: aliceblue;
+}
+
+.card{
+    margin: auto;
+    margin-top: 20px;
+   
+}
