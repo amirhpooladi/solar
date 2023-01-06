@@ -1,6 +1,6 @@
 body {
     background-color: rgb(194, 137, 234);
-    background-image: url("./2.jpg");
+    background-image: url("./assets/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -12,13 +12,15 @@ body {
     font-size: 50px;
     text-align: center;
     margin-top: 40px;
+    background-color: rgb(220, 195, 162);
+    width: fit-content;
+    margin: auto;
 }
 
 #text {
     font-family: "Arabic Typesetting", serif;
     font-size: 2.5rem;
-    opacity: inherit;
-
+    background-color: rgb(220, 195, 162);
 }
 
 hr {
@@ -85,7 +87,7 @@ h3 {
     background-color: rgb(237, 243, 245);
     width: fit-content;
     margin: auto;
-    
+
 }
 
 #data1 {
@@ -122,13 +124,14 @@ h3 {
     color: aliceblue;
 }
 
-.card{
+.card {
     margin: auto;
     margin-top: 20px;
-   
+
 }
-#date{
+
+#date {
     margin-left: 30px;
     margin-top: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
