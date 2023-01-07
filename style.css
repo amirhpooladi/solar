@@ -89,6 +89,8 @@ h3 {
     background-color: rgb(237, 243, 245);
     width: fit-content;
     margin: auto;
+    border-radius: 10px;
+    height: 2rem;
 
 }
 
@@ -137,3 +139,4 @@ h3 {
     margin-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
