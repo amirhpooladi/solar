@@ -18,84 +18,70 @@
 
 
 
-
-    <h4 id="date"></h4>
-
-
-
-    <h1 id="header"><b>محاسبه پنل خورشیدی</b> </h1>
-    <hr>
+    <div id="mainBg">
 
 
 
-    <div class="all">
+        <h4 id="date"></h4>
 
-        <h3 id="text"><b>از این محاسبه گر میتوان برای محاسبه میزان تابش خورشید در هر مختصات مکانی و همچنین میزان انرژی
-                دریافتی برای
-                استفاده از پنل های خورشیدی
-                بهره گرفت
-            </b>
-        </h3>
 
-        <div class="input-group mb-3" id="input1">
 
-            <input id="lat" type="text" class="form-control" placeholder="طول جغرافیایی" value="" aria-label="Username"
-                aria-describedby="basic-addon1">
+        <h1 id="header"><b>محاسبه پنل خورشیدی</b> </h1>
+        <hr>
+
+
+
+        <div class="all">
+
+            <h3 id="text"><b>از این محاسبه گر میتوان برای محاسبه میزان تابش خورشید در هر مختصات مکانی و همچنین میزان
+                    انرژی
+                    دریافتی برای
+                    استفاده از پنل های خورشیدی
+                    بهره گرفت
+                </b>
+            </h3>
+
+            <form>
+                <div class="input-group mb-3" id="input1">
+
+                    <input type="number" max="90" min="-90" id="lat" type="text" class="form-control"
+                        placeholder="طول جغرافیایی" value="" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3" id="input2">
+
+                    <input type="number" max="180" min="-180" id="lon" type="text" class="form-control"
+                        placeholder="عرض جغرافیایی" value="" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <br>
+
+
+                <button id="btn1" class="btn btn-warning btn-lg" type="button">
+                    محاسبه
+                </button>
+
+
+
+            </form>
+
+            <br><br>
+            <h4 id="error"></h4>
+
+
+
         </div>
 
-        <div class="input-group mb-3" id="input2">
-
-            <input id="lon" type="text" class="form-control" placeholder="عرض جغرافیایی" value="" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-
-
-        <!--
-    <div class="input-group mb-3" id="input3">
-
-            <input id="kw" type="text" class="form-control" placeholder="توان ساعت مورد نیاز" value="" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group mb-3" id="input4">
-
-            <input id="panel" type="text" class="form-control" placeholder="توان نامی پنل" value="" aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
+        
+        
 
     
--->
-
-        <!--
-            <h4 id="data1"></h4>
-            <h4 id="data2"></h4>
-            <h4 id="data3"></h4>
-
--->
-<!--
-        <div  class="card" style="width: 18rem;">
-            <ul  class="list-group list-group-flush">
-                <li id="peak_li" class="list-group-item"></li>
-                <li id="elec_li" class="list-group-item"></li>
-                <li id="panel_li" class="list-group-item"></li>
-            </ul>
-        </div>
--->
-
-
-        <br>
-
-        <button id="btn1" type="button" class="btn btn-warning btn-lg">محاسبه</button>
-        
-        <br><br>
-        <h4 id="error"></h4>
-
-
-        <!--   <img id="map" src="./assets/peak.jpg">
-        -->
+        <script src="index.js"></script>
+    <!--    
+        <iframe src="https://www.google.com/maps/embed" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-
-    <script src="index.js"></script>
+-->
+    <h6 style="color: rgb(252, 1, 1); text-align: center;">idea by Ray</h6>
 </body>
 
 </html>
