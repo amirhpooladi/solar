@@ -214,7 +214,7 @@ async function getData(lat, lon) {
 
         //showing pv cards information 
 
-/*
+
         if (document.querySelector("#cardDisplay")) {
 
             document.querySelector("#btnCard4Container").addEventListener("click", () => {
@@ -230,7 +230,6 @@ async function getData(lat, lon) {
                 `
             })
         }
-        */
     }
 
 
