@@ -3,6 +3,8 @@ body {
     background-image: url("./2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(5px);
+    
 
 }
 
@@ -15,7 +17,7 @@ body {
     background-color: rgb(220, 195, 162);
     width: fit-content;
     margin: auto;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 
@@ -24,7 +26,7 @@ body {
     font-family: "Arabic Typesetting", serif;
     font-size: 2.5rem;
     background-color: rgb(220, 195, 162);
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 hr {
@@ -129,17 +131,24 @@ h3 {
     background-color: rgb(12, 7, 56);
     color: aliceblue;
 }
-#btn1:hover{
+
+#btn1:hover {
     background-color: brown;
 }
 
-#btn1:after{
+#btn1:after {
     background-color: rgb(236, 13, 13);
+}
+
+#btn1:disabled {
+    background-color: brown;
+
 }
 
 .card {
     margin: auto;
     margin-top: 20px;
+    width: auto;
 
 }
 
@@ -148,12 +157,68 @@ h3 {
     margin-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#loading{
+
+#loading {
     width: 50px;
     height: 50px;
-    
+
 }
-#LL{
+
+#LL {
     background-color: rgb(236, 255, 26);
 }
+
+#perID {
+    color: chartreuse;
+    margin-top: 10px;
+}
+
+#PVOUT {
+    background-color: yellow;
+    direction: rtl;
+}
+#card1 {
+    background-color: rgb(108, 255, 255);
+    color: aqua;
+    background: brown;
+}
+
+#cardDisplay {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 4;
+    flex-wrap: wrap;
+    
+}
+
+#cardBG{
+    background-color: rgb(146, 152, 154);
+}
+
+#btnCard1{
+    background-color: rgb(12, 7, 56);
+
+}
+
+
+#btnCard2{
+    background-color: rgb(12, 7, 56);
+
+}
+
+
+#btnCard3{
+    background-color: rgb(12, 7, 56);
+
+}
+
+
+#btnCard4{
+    background-color: rgb(12, 7, 56);
+
+}
+
+
+
 
