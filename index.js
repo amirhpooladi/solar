@@ -154,7 +154,7 @@ async function getData(lat, lon) {
     <div id="cardDisplay">
 
             <div id="cardBG" class="card" style="width: 18rem;">
-                <img src="./assets/pv1_1.png" class="card-img-top" alt="pv1">
+                <img src="./pv1_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">مسکونی کوچک</h5>
 
@@ -166,7 +166,7 @@ async function getData(lat, lon) {
 
 
             <div id="cardBG" class="card" style="width: 18rem;">
-                <img src="./assets/pv2_1.png" class="card-img-top" alt="pv1">
+                <img src="./pv2_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">تجاری سایز متوسط</h5>
 
@@ -181,7 +181,7 @@ async function getData(lat, lon) {
 
 
             <div id="cardBG" class="card" style="width: 18rem;">
-                <img src="./assets/pv3_1.png" class="card-img-top" alt="pv1">
+                <img src="./pv3_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">روی زمین در مقیاس بزرگ</h5>
 
@@ -193,7 +193,7 @@ async function getData(lat, lon) {
 
 
             <div id="cardBG" class="card" style="width: 18rem;">
-                <img src="./assets/pv4_1.png" class="card-img-top" alt="pv1">
+                <img src="./pv4_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">شناور در مقیاس بزرگ</h5>
                     <div id="btnCard4Container">
