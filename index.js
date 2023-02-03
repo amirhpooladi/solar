@@ -13,6 +13,7 @@ function clock() {
         console.log();
         clock();
     }, 1000);
+    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea byd Ray</footer>`
 }
 clock();
 
@@ -294,7 +295,7 @@ async function getData(lat, lon) {
 //start program by click on button
 
 function click() {
-
+   
 
 
     document.querySelector("#btn1").addEventListener("click", () => {
@@ -321,18 +322,19 @@ click();
 
 
 
-
+/*
 
 
 
 async function a() {
     var ali=await fetch("https://api.globalsolaratlas.info/data/pvcalc?loc=-24.559662,131.193299");
+                         https://api.globalsolaratlas.info/data/lta?loc=-24.559662,131.193299
     var amir=await ali.json();
     console.log(amir);
 }
 a();
 
-
+*/
 
 
 
