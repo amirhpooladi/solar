@@ -2,6 +2,7 @@
 
 function clock() {
     setTimeout(() => {
+        /*
         date = new Date;
         year = date.getFullYear();
         month = date.getMonth();
@@ -11,9 +12,11 @@ function clock() {
         sec = date.getSeconds();
         document.querySelector("#date").innerHTML = `${year}/${month + 1}/${day + 1} ----  ${hours}:${min}:${sec} `;
         console.log();
+        */
         clock();
     }, 1000);
-    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea by Ray</footer>`
+    
+    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea byd Ray</footer>`
 }
 clock();
 
