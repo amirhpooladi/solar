@@ -13,7 +13,7 @@ function clock() {
         console.log();
         clock();
     }, 1000);
-    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea byd Ray</footer>`
+    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea by Ray</footer>`
 }
 clock();
 
