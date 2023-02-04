@@ -28,7 +28,7 @@ body {
     position: relative;
 }
 
-hr {
+#line {
     width: 80%;
     margin-top: 40px;
     height: 2rem;
@@ -147,6 +147,7 @@ h3 {
     margin: auto;
     margin-top: 20px;
     width: auto;
+    
 }
 
 
@@ -239,6 +240,9 @@ pre {
     direction: rtl;
 }
 #lon{
+    direction: rtl;
+}
+#cardDisplay{
     direction: rtl;
 }
 
