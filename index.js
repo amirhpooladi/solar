@@ -1,5 +1,5 @@
 //showing clock
-
+/*
 function clock() {
     setTimeout(() => {
         /*
@@ -12,19 +12,20 @@ function clock() {
         sec = date.getSeconds();
         document.querySelector("#date").innerHTML = `${year}/${month + 1}/${day + 1} ----  ${hours}:${min}:${sec} `;
         console.log();
-        */
+        
         clock();
     }, 1000);
     
-    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >idea byd Ray</footer>`
+    document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >.</footer>`
 }
 clock();
-
+*/
 
 //getting lat & lon to show data
 
 async function getData(lat, lon) {
     try {
+
 
         //api for timezone and region
         var timeZone = await fetch(`https://vip.timezonedb.com/v2/get-time-zone?key=OX7AD7FQO41D&by=position&format=json&lat=${lat}&lng=${lon}`);
@@ -162,10 +163,17 @@ async function getData(lat, lon) {
 
 
         //add panel cards
-        var panel1 = 1;
+        var panel1 = 5;
         var panel2 = 100;
         var panel3 = 1000;
         var panel4 = 1000;
+        var price1=1750;
+        var price2=1650;
+        var space1=50;
+        var space2=1000;
+        var space3=12000;
+        var space4=12000;
+        var priceBack=4;
 
         var pvCards = `
     <div id="cardDisplay">
@@ -174,11 +182,25 @@ async function getData(lat, lon) {
                 <img src="./assets/pv1_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">مسکونی کوچک</h5>
-                    
+
+                    <hr>
                     <pre>نوع پنل: Small residential</pre>
+                    <hr>
                     <pre>ظرفیت:(${panel1}kwp)</pre>
+                    <hr>
                     <pre>آزیموث : Default(0º)</pre>
-                    <pre>درجه بهینه پنل های: Default(${OPTA}°)</pre>
+                    <hr>
+                    <pre>درجه بهینه پنل های:(${OPTA}°)</pre>
+                    <hr>
+                    <pre>قیمت فروش هر کیلووات برق:(${price1}تومان)</pre>
+                    <hr>
+                    <pre>فضای مورد نیاز:(${space1}متر مربع)</pre>
+                    <hr>
+                    <pre>درامد ماهانه:(${(PVOUT / 360).toFixed(1)*panel1*30*price1}تومان)</pre>
+                    <hr>
+                    <pre>درامد سالانه:(${(PVOUT).toFixed(1)*panel1*price1}تومان)</pre>
+                    <hr>
+                    <pre>بازگشت سرمایه:(${priceBack}سال)</pre>
                     
                 
                 </div>
@@ -190,11 +212,24 @@ async function getData(lat, lon) {
                 <img src="./assets/pv2_1.png" class="card-img-top" alt="pv1">
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">تجاری سایز متوسط</h5>
-                    
+                    <hr>
                     <pre>نوع پنل: Medium size comercial</pre>
+                    <hr>
                     <pre>ظرفیت:(${panel2}kwp)</pre>
-                    <pre>آزیموث : Default(0º)</pre>
-                    <pre>درجه بهینه پنل های: Default(${OPTA}°)</pre>
+                    <hr>
+                    <pre>آزیموت : Default(0º)</pre>
+                    <hr>
+                    <pre>درجه بهینه پنل ها:(${OPTA}°)</pre>
+                    <hr>
+                    <pre>قیمت فروش هر کیلووات برق:(${price2}تومان)</pre>
+                    <hr>
+                    <pre>فضای مورد نیاز:(${space2}متر مربع)</pre>
+                    <hr>
+                    <pre>درامد ماهانه:(${(PVOUT / 360).toFixed(1)*panel2*30*price2}تومان)</pre>
+                    <hr>
+                    <pre>درامد سالانه:(${(PVOUT).toFixed(1)*panel2*price2}تومان)</pre>
+                    <hr>
+                    <pre>بازگشت سرمایه:(${priceBack}سال)</pre>
                     
                 
 
@@ -209,11 +244,24 @@ async function getData(lat, lon) {
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">روی زمین در مقیاس بزرگ</h5>
 
-                    
+                    <hr>
                     <pre>نوع پنل: Ground-mounted large scale</pre>
+                    <hr>
                     <pre>ظرفیت:(${panel3}kwp)</pre>
-                    <pre>آزیموث : Default(0º)</pre>
-                    <pre>درجه بهینه پنل های: Default(${OPTA}°)</pre>
+                    <hr>
+                    <pre>آزیموت : Default(0º)</pre>
+                    <hr>
+                    <pre>درجه بهینه پنل ها:(${OPTA}°)</pre>
+                    <hr>
+                    <pre>قیمت فروش هر کیلووات برق:(${price2}تومان)</pre>
+                    <hr>
+                    <pre>فضای مورد نیاز:(${space3}متر مربع)</pre>
+                    <hr>
+                    <pre>درامد ماهانه:(${(PVOUT / 360).toFixed(1)*panel3*30*price2}تومان)</pre>
+                    <hr>
+                    <pre>درامد سالانه:(${(PVOUT).toFixed(1)*panel3*price2}تومان)</pre>
+                    <hr>
+                    <pre>بازگشت سرمایه:(${priceBack}سال)</pre>
                     
 
                    
@@ -227,12 +275,24 @@ async function getData(lat, lon) {
                 <div class="card-body">
                     <h5 class="card-title" style="padding-bottom: 30px;">شناور در مقیاس بزرگ</h5>
                     
-                    
+                    <hr>
                     <pre>نوع پنل: Floating large scale</pre>
+                    <hr>
                     <pre>ظرفیت:(${panel4}kwp)</pre>
-                    <pre>آزیموث : Default(10º)</pre>
-                    <pre>درجه بهینه پنل های: Default(${OPTA}°)</pre>
-                    
+                    <hr>
+                    <pre>آزیموت : Default(10º)</pre>
+                    <hr>
+                    <pre>درجه بهینه پنل ها:(${OPTA}°)</pre>
+                    <hr>
+                    <pre>قیمت فروش هر کیلووات برق:(${price2}تومان)</pre>
+                    <hr>
+                    <pre>فضای مورد نیاز:(${space4} متر مربع)</pre>
+                    <hr>
+                    <pre>درامد ماهانه:(${(PVOUT / 360).toFixed(1)*panel4*30*price2}تومان)</pre>
+                    <hr>
+                    <pre>درامد سالانه:(${(PVOUT).toFixed(1)*panel4*price2}تومان)</pre>
+                    <hr>
+                    <pre>بازگشت سرمایه:(${priceBack}سال)</pre>
 
                     
                     
@@ -322,13 +382,7 @@ function click() {
 
 click();
 
-
-
-
 /*
-
-
-
 async function a() {
     var ali=await fetch("https://api.globalsolaratlas.info/data/pvcalc?loc=-24.559662,131.193299");
                          https://api.globalsolaratlas.info/data/lta?loc=-24.559662,131.193299
@@ -336,9 +390,8 @@ async function a() {
     console.log(amir);
 }
 a();
-
 */
-
+document.getElementById("ray").innerHTML=` <footer id="ray" style="color: rgb(252, 1, 1); text-align: center; margin-top:${screen.height}${"px"}" >.</footer>`
 
 
 
