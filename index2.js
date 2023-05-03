@@ -40,6 +40,7 @@ function init() {
   click.activate();
 }
 
+
 OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
   defaultHandlerOptions: {
     single: true,
