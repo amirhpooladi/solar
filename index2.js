@@ -261,8 +261,21 @@ function click() {
       document.getElementById("meterOrKw").value === "" ||
       document.getElementById("panelp").value === "" ||
       document.getElementById("inverterp").value === "" ||
-      document.getElementById("elecPrice").value === ""
+      document.getElementById("elecPrice").value === "" ||
+      document.getElementById("lat").value === "" ||
+      document.getElementById("lon").value === ""
+
     ) {
+      if(document
+        .querySelector(".cards")){
+      document
+      .querySelector(".cards")
+      .parentNode.removeChild(document.querySelector(".cards"));
+
+      document
+      .querySelector("#cardDisplay")
+      .parentNode.removeChild(document.querySelector("#cardDisplay"));
+    }
       document.getElementById("error").textContent =
         "همه ی پارامتر ها را وارد کنید";
     } else {
